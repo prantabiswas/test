@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff3030"
+    tools:context="com.example.msi.test.Prescription">
+
+    <TextView
+        android:id="@+id/textView_prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="@string/prescription"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editText_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_prescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="27dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Problem Description"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_bp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_date"
+        android:layout_alignStart="@+id/editText_date"
+        android:layout_below="@+id/editText_problem"
+        android:layout_marginTop="11dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="BP"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_problem"
+        android:layout_alignRight="@+id/editText_problem"
+        android:layout_alignTop="@+id/editText_bp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/editText_bp"
+        android:layout_toRightOf="@+id/editText_bp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText_bp"
+        android:layout_margin="15dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Date (DD/MM/YYYY)"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_medicinename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_weight"
+        android:layout_alignRight="@+id/editText_weight"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Medicine Name"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_dose"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_medicinename"
+        android:layout_alignStart="@+id/editText_medicinename"
+        android:layout_below="@+id/editText_medicinename"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Dose"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_day"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_dose"
+        android:layout_alignBottom="@+id/editText_dose"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Day"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_doctorname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_advice"
+        android:layout_alignEnd="@+id/editText_advice"
+        android:layout_alignLeft="@+id/editText_advice"
+        android:layout_alignRight="@+id/editText_advice"
+        android:layout_alignStart="@+id/editText_advice"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Doctor Name"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_upload"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Advice"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:background="#cd2626"
+        android:padding="10dp"
+        android:text="Upload Prescription"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText_medicinename"
+        android:layout_alignRight="@+id/editText_medicinename"
+        android:layout_alignTop="@+id/editText_day"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="#cd2626"
+        android:text="Add"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

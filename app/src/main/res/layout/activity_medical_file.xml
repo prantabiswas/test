@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff3030"
+    tools:context="com.example.msi.test.Medical_File">
+
+
+    <TextView
+        android:id="@+id/textView_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="27dp"
+        android:paddingTop="5dp"
+        android:text="Create Medical Profile"
+        android:textColor="#ff3030"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/editText_problem"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_profile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="101dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_problem"
+        android:layout_alignLeft="@+id/editText_problem"
+        android:layout_alignRight="@+id/editText_problem"
+        android:layout_alignStart="@+id/editText_problem"
+        android:layout_below="@+id/editText_problem"
+        android:layout_marginTop="22dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Date Of Birth ( DD/MM/YYYY )"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText_dob"
+        android:layout_alignRight="@+id/editText_dob"
+        android:layout_below="@+id/editText_dob"
+        android:layout_marginTop="23dp"
+        android:background="#ffffff"
+        android:entries="@array/Gender"
+        android:paddingLeft="30dp"
+        android:spinnerMode="dropdown"
+        android:tooltipText="gender"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editText_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_submit"
+        android:layout_alignStart="@+id/button_submit"
+        android:layout_below="@+id/spinner"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Phone (+880)"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#cd2626"
+        android:padding="10dp"
+        android:text="Submit"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_gender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/spinner"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/spinner"
+        android:layout_toStartOf="@+id/spinner"
+        android:background="#ff3030"
+        android:paddingBottom="5dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="5dp"
+        android:text="Select Gender :"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

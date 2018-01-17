@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="CreateOne"><u>Create One</u></string>
+    <string name="signout"><u>Sign Out</u></string>
+    <string name="prescription"><u>Create Prescription</u></string>
+    <array name="Gender">
+        <item>
+            Male
+        </item>
+        <item>
+            Female
+        </item>
+        <item>
+            Others
+        </item>
+    </array>
+    <string name="multiline">Create Your Medical Profile</string>
+</resources>
